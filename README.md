@@ -9,8 +9,8 @@
 
 ### Таблицы
 - **owners** — владельцы (`id`, `name`, `phone`)
-- **pets** — питомцы (`id`, `name`, `species`, `breed`, `age`, `owner_id`)
-- **medical_records** — медицинские записи (`id`, `pet_id`, `diagnosis`, `complaints`, `treatment`)
+- **pets** — питомцы (`id`, `name`, `species`, `breed`, `age`, `owner_id (ВК)`)
+- **medical_records** — медицинские записи (`id`, `pet_id(ВК)`, `diagnosis`, `complaints`, `treatment`)
 ### Связи
 - Один владелец → много питомцев (1:N)
 - Один питомец → много записей (1:N)
