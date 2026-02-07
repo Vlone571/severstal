@@ -1,12 +1,26 @@
-# React + Vite
+# Ветеринарная Клиника 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Реализованные функции
+- окно добавление нового пациента (питомца + владельца + первичная медзапись)
+- Просмотр списка пациентов
+- Открытие медицинской карточки
+- Удаление пациента
+### Схема БД
 
-Currently, two official plugins are available:
+### Таблицы
+- **owners** — владельцы (`id`, `name`, `phone`)
+- **pets** — питомцы (`id`, `name`, `species`, `breed`, `age`, `owner_id`)
+- **medical_records** — медицинские записи (`id`, `pet_id`, `diagnosis`, `complaints`, `treatment`)
+### Связи
+- Один владелец → много питомцев (1:N)
+- Один питомец → много записей (1:N)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Объектная модель
+// Владелец
+{ id: number, name: string, phone: string }
 
-## Expanding the ESLint configuration
+// Питомец
+{ id: number, name: string, species: string, breed: string, age: number | null, ownerId: number }
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+// Медицинская запись
+{ id: number, petId: number, diagnosis: string, complaints: string, treatment: string }
