@@ -1,0 +1,56 @@
+.medical-card-module {
+  position: fixed;
+  min-width: 860px;
+  min-height: 500px;
+  background-color: lightgray;
+  border-radius: 32px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.medical-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px 0px 20px;
+}
+
+.button-close {
+  font-size: 20px;
+  border-radius: 20px;
+  border-width: 1px;
+  padding: 15px;
+}
+
+.medical-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 10px 10px 10px;
+  text-align: left;
+}
+
+.medical-card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: white;
+  border-width: 1px;
+  padding: 10px;
+}
+
+.medical-card-list--column {
+  flex-direction: column;
+}
+
+
+.medical-card-title {
+  margin-left: 10px
+}
+
+.medical-card-text {
+  font-size: 18px;
+  margin: 10px 10px 10px 10px;
+}

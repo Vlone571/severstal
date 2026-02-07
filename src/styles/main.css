@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 30px;
+  background-color: lightgray;
+}
+
+.module {
+  background-color: white;
+  border-radius: 32px;
+  padding: 15px;
+  text-align: center;
+  min-height: 500px;
+  min-width: 860px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0px;
+}
